@@ -133,14 +133,17 @@ word_frequencies = {
 }
 
 # 创建词云对象并配置相关参数
-wordcloud = WordCloud(font_path='NotoSansTCBlack.ttf', background_color='white')
+wordcloud = WordCloud(font_path='NotoSansTCBlack.ttf',     
+                      background_color='white',
+                      width=1000, height=400) # set width and height of the wordcloud image
 
 # 生成词云图
 wordcloud.generate_from_frequencies(word_frequencies)
 
+# Export to png
+wordcloud.to_file("./images/wordcloud.png")
+
 # 显示词云图
 st.title("Word Cloud")
-fig, ax = plt.subplots(figsize=(80, 50), dpi=300)  # Adjust figsize and dpi for clarity
-ax.imshow(wordcloud, interpolation='bilinear')
-ax.axis('off')
-st.pyplot(fig)
+st.image("./images/wordcloud.png")
+
