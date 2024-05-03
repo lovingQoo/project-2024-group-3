@@ -17,6 +17,44 @@ st.set_page_config(
 )
 
 ###############################################################
+
+# background image
+# Reference: https://discuss.streamlit.io/t/background-image-is-not-getting-dispalyed/53325/2
+
+###############################################################
+import base64
+def get_image_data(image_path):
+    with open(image_path, 'rb') as image_file:
+        image_data = image_file.read()
+        encoded_image_data = base64.b64encode(image_data).decode('utf-8')
+    return encoded_image_data
+
+# Specify the path to your local image file
+image_path = './images/backgroundimage.jpeg'
+
+# Get the base64-encoded image data
+image_data = get_image_data(image_path)
+
+# FYI, you can customize the style of text
+customStyleTitle = '<h1 style="font-family: serif; color:#684905; font-size: 50px;">Let\'s Explore Different Types of Mythical Creatures in the Classic of Mountains and Rivers!</h1>'
+st.markdown(customStyleTitle, unsafe_allow_html=True)
+
+# Set the background image
+background_image = f"""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+    background-image: url(data:image/jpeg;base64,{image_data});
+    background-size: 100vw 100vh;
+    background-position: center;  
+    background-repeat: no-repeat;
+}}
+</style>
+"""
+
+st.markdown(background_image, unsafe_allow_html=True)
+
+
+###############################################################
 # page content
 ###############################################################
 
