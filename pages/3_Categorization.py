@@ -25,7 +25,7 @@ st.title("Let's Explore Different Types of Mythical Creatures in the Classic of 
 ###############################################################
 # Data
 ###############################################################
-filepath = 'mythical_creatures.xlsx'
+filepath = './data/mythical_creatures.xlsx'
 data = pd.read_excel(filepath, sheet_name='Sheet1')
 
 ###############################################################
@@ -64,7 +64,7 @@ st.markdown("---")
 st.markdown("## Categorization")
 
 # 读取Excel文件
-filepath = 'mythical_creatures.xlsx'
+filepath = './data/mythical_creatures.xlsx'
 df = pd.read_excel(filepath, sheet_name='Sheet1')
 
 # 按篇章分组
@@ -75,14 +75,21 @@ chapters = df['篇章'].unique()
 
 # 创建一个下拉菜单，用于选择篇章
 selected_chapter = st.selectbox('选择篇章', chapters)
-    
+
+st.markdown("#")
+
 # 根据选择的篇章显示对应的異獸
 selected_df = grouped.get_group(selected_chapter)
 for index, row in selected_df.iterrows():
-    st.subheader(row['名字'])
-    st.write('原文：', row['原文'])
-    st.write('譯釋：', row['譯釋'])
-    image_path = f'creatures_images/{index+1}.png'  # 根据索引值构建图片文件路径
-    st.image(image_path)
-    st.write( row['形容'])
+    # use column layout for better layout
+    colcount = st.columns([3, 7]) 
+    count = 200
+    with colcount[0]: 
+        st.subheader(row['名字'])
+        image_path = f'./images/creatures_images/{index+1}.png'  # 根据索引值构建图片文件路径
+        st.image(image_path, width=150)
+        st.write( row['形容'])
+    with colcount[1]:
+        st.write('原文：', row['原文'])
+        st.write('譯釋：', row['譯釋'])
     st.write('---')

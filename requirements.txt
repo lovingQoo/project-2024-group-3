@@ -6,3 +6,4 @@ plotly==5.16.1
 streamlit==1.33.0
 streamlit-image-comparison==0.0.4
 wordcloud==1.9.3
+openpyxl
