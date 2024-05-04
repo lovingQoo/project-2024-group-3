@@ -2,8 +2,11 @@
 # import python libraries
 ###############################################################
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud
+from wordcloud import WordCloud,ImageColorGenerator
+from PIL import Image
+import numpy as np
 import streamlit as st
+import pandas as pd
 
 ###############################################################
 # page info 
@@ -15,12 +18,46 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded", 
 )
+st.caption("HUMA5630 Digital Humanities - Group 3")
+###############################################################
+# Background Image
+###############################################################
+# 设置页面背景图层
+st.markdown(
+    """
+    <style>
+    .header-container {
+        background-image: url(https://img95.699pic.com/photo/40195/1356.jpg_wh300.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    .header-container h1 {
+        font-size: 40px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .header-container p {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        display: inline-block;
+    }
 
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# 显示标题文字和副标题
+st.markdown('<div class="header-container"><h1>About This Text</h1>', unsafe_allow_html=True)
 ###############################################################
 # page content
 ###############################################################
 
-st.title("About This Text")
+st.markdown("")
 st.markdown("The 'Classic of Mountains and Seas' is a renowned ancient Chinese text that delves into the rich tapestry of mythical geography, creatures, and cultures. Compiled over centuries, it stands as a testament to the profound imagination and curiosity of ancient Chinese scholars. Within its pages lie a mesmerizing blend of folklore, cosmology, and geography, offering readers a window into the imaginative worldviews of ancient China.")
 st.markdown("The book has more than 38,000 words in total and is divided into eighteen sections; it describes over 550 mountains and 300 channels.")
 st.markdown("---")
@@ -132,18 +169,29 @@ word_frequencies = {
     '其東': 17
 }
 
+
+
+# 加载云朵形状的图片
+cloud_mask = np.array(Image.open('./images/shanfeng.png'))
+
 # 创建词云对象并配置相关参数
-wordcloud = WordCloud(font_path='NotoSansTCBlack.ttf',     
-                      background_color='white',
-                      width=1000, height=400) # set width and height of the wordcloud image
+wordcloud = WordCloud(font_path='./data/NotoSansTCBlack.ttf', background_color='white', mask=cloud_mask)
 
 # 生成词云图
 wordcloud.generate_from_frequencies(word_frequencies)
 
-# Export to png
-wordcloud.to_file("./images/wordcloud.png")
+# 根据图片颜色生成词云图的颜色
+image_colors = ImageColorGenerator(cloud_mask)
+wordcloud.recolor(color_func=image_colors)
 
 # 显示词云图
 st.title("Word Cloud")
-st.image("./images/wordcloud.png")
+st.markdown("As a geographical chronicle, there are many high-frequency words which are descriptive, such as \"name as\", as well as east, south, and west which describe geographical directions.")
+fig, ax = plt.subplots(figsize=(80, 50), dpi=300)  # Adjust figsize and dpi for clarity
+ax.imshow(wordcloud, interpolation='bilinear')
+ax.axis('off')
+st.pyplot(fig)
+
+##############################################################
+# Data --TextCategory
 
