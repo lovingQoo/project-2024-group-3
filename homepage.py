@@ -16,7 +16,7 @@ st.set_page_config(
     page_icon="👋",
 )
 st.caption("Demo by HKUST Digital Humanities Initiative-Group3")
-st.image('/Users/yuchy/Desktop/homepage picture.jpg')
+st.image('.images/homepagepicture.jpg')
 st.title("A Study of  “The Classic of Mountains and Seas”《山海经》")
 st.title('About the Project')
 st.markdown(" The primary objective of this project is to utilize modern technology to present the classic Chinese text 'The Classic of Mountains and Sea'. Throughout the spring semester of 2024, the project team employed a diverse range of methods, including but not limited to text analysis, spatial mapping, and data analysis, with the ultimate aim of unraveling the enigmatic tales, intricate river and mountain distributions, and various types of mythical creatures depicted in mysterious work. The ultimate goal of the project is to vividly present these ancient Chinese myths using modern technology, thereby showcasing the captivating allure of China's ancient mythology.")
