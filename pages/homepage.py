@@ -1,4 +1,10 @@
 import streamlit as st
+from menu import menu
+
+st.switch_page("pages/homepage.py")
+
+menu()
+
 st.set_page_config(
     page_title="Demo | HKUST Digital Humanities Initiative-Group3",
     page_icon="👋",
