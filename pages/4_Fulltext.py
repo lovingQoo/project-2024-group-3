@@ -124,4 +124,8 @@ st.image(image, caption="", use_column_width=True)
 # import python libraries
 ###############################################################
 
-
+# 在底部加上參考資料
+st.markdown("<h2 style='color: white;'>Reference:</h2>", unsafe_allow_html=True)
+st.markdown("<p style='color: black;'>王紅旗：《全本繪圖山海經︰海內外九經》，武漢大學出版社，2011年4月第1版。</p>", unsafe_allow_html=True)
+st.markdown("<p style='color: black;'>羅元：《山精海怪：萌系山海經完全圖譜》，人民郵電出版社，2018年6月第1版。</p>", unsafe_allow_html=True)
+st.markdown("<p style='color: black;'>劉宗迪：《失落的天書「《山海經》與古代華夏世界觀（增訂本）》，商務印書館，2016年5月第1版。</p>", unsafe_allow_html=True)
