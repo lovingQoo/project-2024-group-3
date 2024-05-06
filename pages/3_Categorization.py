@@ -81,7 +81,7 @@ data = pd.read_excel(filepath, sheet_name='Sheet1')
 ###############################################################
 # Book Information
 ###############################################################
-expander = st.expander("Click here to see more information about the Book", expanded=False)
+expander = st.expander("Click here to see more information about the Book！", expanded=False)
 
 with expander:
     expander.write("Book Title: ShanHai BaiLin《山海百靈》")
@@ -107,7 +107,7 @@ with expander:
 # Guess Numer of Mythical Creatures in the Book
 ###############################################################
 st.markdown("---")
-st.markdown("## Can You Guess How Mmany Mythical Creatures in the Book?")
+st.markdown("## Can You Guess How Many Mythical Creatures in the Book?")
 
 correct_number = 100
 user_guess = st.number_input("Let's Guess Now: ", min_value=1, max_value=1000, step=1)
