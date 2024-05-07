@@ -27,7 +27,6 @@ def add_bg_from_local():
         .stApp {{
             background-image: url(https://pic.ntimg.cn/file/20231128/18232014_114808225102_2.jpg);
             background-size: cover;
-            filter: contrast(0.8);
             
         }}
         </style>
