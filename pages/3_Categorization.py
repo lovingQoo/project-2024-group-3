@@ -60,6 +60,26 @@ st.markdown(
         text-align: center;
         display: inline-block;
     }
+    
+    [data-testid="stExpander"],
+    [data-testid="stExpanderDetails"],
+    [data-testid="stHorizontalBlock"]
+    {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .st-at, .st-af {
+        background-color: white;
+    }
+    .st-emotion-cache-1h9usn1 {
+        border-width: 0;
+    } 
+
+    [data-testid=stSidebar] {
+        background-color: #fff1d6;
+    }
+
     </style>
     """,
     unsafe_allow_html=True
