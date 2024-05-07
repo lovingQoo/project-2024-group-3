@@ -9,6 +9,13 @@ from streamlit_image_comparison import image_comparison
 # page info 
 ###############################################################
 
+st.set_page_config(
+    page_title="Map -  HUMA5630-Digital Humanities - project-2024-group-3",
+    page_icon="🌍", 
+    layout="wide",
+    initial_sidebar_state="expanded", 
+)
+
 def add_bg_from_local():
     st.markdown(
         f"""
@@ -31,7 +38,7 @@ st.caption("HUMA5630 Digital Humanities - Group 3")
 # page content
 ###############################################################
 
-st.header("Comparison between maps")
+st.header("Comparison Between Maps")
 
 
 image_comparison(
