@@ -41,6 +41,18 @@ st.markdown(
         unsafe_allow_html=True
     )
 
+# sidebar
+sidebar_items = ["homepage", "Text Analysis", "Map", "Text Analysis"]
+selected_item = st.sidebar.radio("descriptions", sidebar_items)
+if selected_item == "homepage":
+    st.write("这是homepage的内容")
+elif selected_item == "Text Analysis":
+st.write("这是Text Analysis的内容")
+elif selected_item == "Map":
+    st.write("这是Map的内容")
+elif selected_item == "categorization":
+    st.write("这是categorization内容")
+
 ###############################################################
 # page content
 ###############################################################
