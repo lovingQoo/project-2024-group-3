@@ -9,8 +9,7 @@ st.set_page_config(
     page_title="Homepage -  HUMA5630-Digital Humanities - project-2024-group-3",
     page_icon="🏠",
 )
-# 定义菜单内容
-menu_items = ["homepage", "Map", "Text Analysis", "categorization"]
+
 # 根据选择的选项显示不同的内容
 if selected_item == "homepage":
     st.write("这是homepage的内容")
