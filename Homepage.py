@@ -29,6 +29,18 @@ def add_bg_from_local():
 
 add_bg_from_local()
 
+#SideBar color
+st.markdown(
+        """
+        <style>
+[data-testid=stSidebar] {
+        background-color: #9dc098;
+    }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
 ###############################################################
 # page content
 ###############################################################
