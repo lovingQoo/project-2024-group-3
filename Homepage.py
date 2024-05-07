@@ -6,8 +6,8 @@ import streamlit as st
 # page information
 ###############################################################
 st.set_page_config(
-    page_title="Demo | HKUST Digital Humanities Initiative-Group3",
-    page_icon="👋",
+    page_title="Homepage -  HUMA5630-Digital Humanities - project-2024-group-3",
+    page_icon="🏠",
 )
 
 ###############################################################
