@@ -197,4 +197,3 @@ st.markdown("<p style='color: black;'>王紅旗：《全本繪圖山海經︰海
 st.markdown("<p style='color: black;'>羅元：《山精海怪：萌系山海經完全圖譜》，人民郵電出版社，2018年6月第1版。</p>", unsafe_allow_html=True)
 st.markdown("<p style='color: black;'>劉宗迪：《失落的天書「《山海經》與古代華夏世界觀（增訂本）》，商務印書館，2016年5月第1版。</p>", unsafe_allow_html=True)
 st.markdown("<p style='color: black;'>人魚插圖：http://localhost:8501/media/90752eaac65ed936d10977fbef2534ebfb8210319e4a6bafb76e573a.jpg</p>", unsafe_allow_html=True)
-st.markdown("<p style='color: black;'>山海經古籍插圖：https://atimebook.com/wp-content/uploads/2022/09/2022090602550333-1024x843.jpg</p>", unsafe_allow_html=True)

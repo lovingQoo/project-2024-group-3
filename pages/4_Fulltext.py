@@ -126,4 +126,7 @@ st.image(image, caption="", use_column_width=True)
 # 其他内容
 ###############################################################
 # import python libraries
-###############################################################
+st.markdown("<h2 style='color: white;'>References:</h2>", unsafe_allow_html=True)
+st.markdown("<p style='color: black;'>《山海經》（戰國至漢代，公元前475年-220年），取自https://ctext.org/shan-hai-jing/zhs</p>", unsafe_allow_html=True)
+st.markdown("<p style='color: black;'>山海經古籍插圖：https://atimebook.com/wp-content/uploads/2022/09/2022090602550333-1024x843.jpg</p>", unsafe_allow_html=True)
+st.markdown("<p style='color: black;'>插曲《桃林》：https://y.qq.com/n/ryqq/songDetail/003WTKnw0jipHW</p>", unsafe_allow_html=True)
