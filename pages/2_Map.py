@@ -25,7 +25,7 @@ def add_bg_from_local():
     )
 
 add_bg_from_local()
-
+st.caption("HUMA5630 Digital Humanities - Group 3")
 
 ###############################################################
 # page content
