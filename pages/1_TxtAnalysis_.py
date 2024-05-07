@@ -16,7 +16,7 @@ import ast
 
 st.set_page_config(
     page_title="Text Analysis -  HUMA5630-Digital Humanities - project-2024-group-3",
-    page_icon="⛰️", 
+    page_icon="📖", 
     layout="wide",
     initial_sidebar_state="expanded", 
 )
@@ -196,7 +196,7 @@ fig, ax = plt.subplots(figsize=(80, 50), dpi=300)  # Adjust figsize and dpi for 
 ax.imshow(wordcloud, interpolation='bilinear')
 ax.axis('off')
 st.pyplot(fig)
-
+st.markdown("---")
 ##############################################################
 ##############################################################
 # Data --TextCategory
