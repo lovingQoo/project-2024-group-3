@@ -41,12 +41,7 @@ st.markdown(
         """,
         unsafe_allow_html=True
     )
-
- #Video
-video_file = open('./data/video.mov', 'rb')
-video_bytes = video_file.read()
-
-st.video(video_bytes)   
+ 
 ###############################################################
 # page content
 ###############################################################
