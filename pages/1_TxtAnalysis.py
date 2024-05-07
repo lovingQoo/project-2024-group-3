@@ -25,6 +25,22 @@ st.caption("HUMA5630 Digital Humanities - Group 3")
 # Background Image
 ###############################################################
 # 设置页面背景图层
+
+#SideBar color
+st.markdown(
+        """
+        <style>
+[data-testid=stSidebar] {
+        background-color: white;
+    }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+ 
+
+
+
 st.markdown(
     """
     <style>

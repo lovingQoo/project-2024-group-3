@@ -22,6 +22,21 @@ st.set_page_config(
     initial_sidebar_state="expanded", 
 )
 st.caption("HUMA5630 Digital Humanities - Group 3")
+
+#SideBar color
+st.markdown(
+        """
+        <style>
+[data-testid=stSidebar] {
+        background-color: white;
+    }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    
+
 ###############################################################
 # Background Image
 ###############################################################
