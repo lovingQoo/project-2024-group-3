@@ -1,10 +1,38 @@
+###############################################################
+# import python libraries
+###############################################################
 import streamlit as st
-
+###############################################################
+# page information
+###############################################################
 st.set_page_config(
     page_title="Demo | HKUST Digital Humanities Initiative-Group3",
     page_icon="👋",
 )
-st.caption("Demo by HKUST Digital Humanities Initiative-Group3")
+
+###############################################################
+# Background Image
+###############################################################
+def add_bg_from_local():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url(https://p7.itc.cn/q_70/images03/20211111/de94dd6a91af4bf49bcc95630b14d55d.jpeg);
+            background-size: cover;
+            
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+add_bg_from_local()
+
+###############################################################
+# page content
+###############################################################
+st.caption("HUMA5630 Digital Humanities - Group 3")
 st.image('./images/homepagepic.jpg')
 st.title("A Study of  “The Classic of Mountains and Seas”《山海经》")
 st.title('About the Project')
