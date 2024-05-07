@@ -48,7 +48,7 @@ st.markdown(" Part 2: Geographical Analysis--WU Yutong （ywuge@connect.ust.hk�
 st.markdown(" Part 3: Categorization of Mythical Creatures--HAN Xuan （xhanap@connect.ust.hk）")
 
 
-st.page_link("./homepage.py", label="Home", icon="🏠", )
+st.page_link("./Homepage.py", label="Home", icon="🏠", )
 st.page_link("./pages/1_TxtAnalysis.py", label="Analysis", icon="📖")
-st.page_link("./pages/2_map.py", label="Map", icon="🗺️")
+st.page_link("./pages/2_Map.py", label="Map", icon="🗺️")
 st.page_link("./pages/3_Categorization.py", label="Categorization", icon="⛰️")
