@@ -10,15 +10,6 @@ st.set_page_config(
     page_icon="🏠",
 )
 
-# 根据选择的选项显示不同的内容
-if selected_item == "homepage":
-    st.write("这是homepage的内容")
-elif selected_item == "Text Analysis":
-    st.write("这是Text Analysis的内容")
-elif selected_item == "Map":
-    st.write("这是Map的内容")
-elif selected_item == "categorization":
-    st.write("这是categorization的内容")
     
 ###############################################################
 # Background Image
