@@ -12,8 +12,7 @@ from streamlit_image_comparison import image_comparison
 st.set_page_config(
     page_title="Map -  HUMA5630-Digital Humanities - project-2024-group-3",
     page_icon="🌍", 
-    layout="wide",
-    initial_sidebar_state="expanded", 
+  
 )
 
 def add_bg_from_local():
