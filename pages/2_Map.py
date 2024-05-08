@@ -68,10 +68,10 @@ st.markdown('<p style="color: blue;">(2) Da Ren Guo: present-day Dawenkou Site�
 st.markdown('<p style="color: blue;">(3) Bohai Sea: present-day Beibu Gulf </p>', unsafe_allow_html=True)
 st.markdown("---")
 st.header("References")
-st.text("王恢. 太平寰宇記索引. 影印版. 台北: 文海出版社, 1975.")
-st.text("刘宗迪.海上有一个大人国[J].读书,2020(12):113-121.")
-st.text("范晔. 后汉书. 西安: 太白文艺出版社, 2006.")
-st.text("山海经地图，取自https://www.bilibili.com/video/BV1bu411b7q5/?spm_id_from=333.337.search-card.all.click&vd_source=6ef399ad76fd342687e206adca6b4d8f")
-st.text("网页背景插图：https://img.zcool.cn/community/01f8905d3ac544a80120695c7fce56.jpg@2o.jpg")
+st.markdown("王恢. 太平寰宇記索引. 影印版. 台北: 文海出版社, 1975.")
+st.markdown("刘宗迪.海上有一个大人国[J].读书,2020(12):113-121.")
+st.markdown ("范晔. 后汉书. 西安: 太白文艺出版社, 2006.")
+st.markdown("山海经地图，取自https://www.bilibili.com/video/BV1bu411b7q5/?spm_id_from=333.337.search-card.all.click&vd_source=6ef399ad76fd342687e206adca6b4d8f")
+st.markdown("网页背景插图：https://img.zcool.cn/community/01f8905d3ac544a80120695c7fce56.jpg@2o.jpg")
 
 
