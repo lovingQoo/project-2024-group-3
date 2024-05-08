@@ -226,7 +226,7 @@ for index, row in selected_df.iterrows():
         st.write('譯釋：', row['譯釋'])
     st.write('---')
 
-st.subheader('Reference')
+st.subheader('References')
 st.markdown("Book: 王新禧. (2018). 山海百靈 : 《山海經》里的神人鳥獸魚 = Shanhai bailing : Shanhaijing lide shen ren niao shou yu (第1版.). 北京時代華文書局.")
 st.markdown("Background image 1:https://img95.699pic.com/photo/40193/0245.jpg_wh300.jpg")
 st.markdown("Background image 2: https://pic.ntimg.cn/file/20231128/18232014_114808225102_2.jpg")
