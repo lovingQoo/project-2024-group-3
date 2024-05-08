@@ -200,6 +200,7 @@ with tab_sea:
 image_path = "./images/shanhaitu.jpg"  # 根据实际文件路径进行修改
 image = Image.open(image_path)
 st.image(image, caption="", use_column_width=True)
+st.markdown("<p style='font-size: 14px;'>Illustration of a mermaid: The mermaid in The Classic of Mountains and Seas is often described as having the upper body of a human and the lower body of a fish. You can find related text content about mermaids in the specific chapters mentioned earlier.</p>", unsafe_allow_html=True)
 st.markdown("<p style='font-size: 14px;'>插圖：《山海經》中的人魚，常被描述为上半身为人、下半身为鱼的形象。在《山經》中的《西山經》、《北山經》、《中山經》裡都曾出現過人魚，在上面的原文中可以找到。</p>", unsafe_allow_html=True)
 # 其他内容
 ###############################################################
