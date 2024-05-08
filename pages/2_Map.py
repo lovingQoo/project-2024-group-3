@@ -54,7 +54,7 @@ image_comparison(
 
 ########
 st.header("Introduction")
-st.markdown("The Classic of Mountains and Seas is an important ancient Chinese geographical and cultural work that records a vast amount of mythological legends, geographical information, and ancient people's understanding of the natural environment.") 
+st.markdown("“The Classic of Mountains and Seas” is an important ancient Chinese geographical and cultural work that records a vast amount of mythological legends, geographical information, and ancient people's understanding of the natural environment.") 
 st.markdown("The correspondence between the geographical records in this book and modern geography can be attributed to the following reasons:")
 st.markdown('<p style="color: blue;">（1）Correspondence of geographical features</p>', unsafe_allow_html=True)
 st.markdown('<p style="color: blue;">（2）Correspondence of place names</p>', unsafe_allow_html=True)
