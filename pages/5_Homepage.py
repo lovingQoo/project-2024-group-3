@@ -75,3 +75,5 @@ st.markdown(" Part 3: Categorization of Mythical Creatures--HAN Xuan （xhanap@c
 st.title('References')
 st.markdown("Homepage Image:")
 st.markdown("1:https://seopic.699pic.com/photo/40216/6112.jpg_wh1200.jpg")
+st.markdown("Homepage Background:")
+st.markdown("2:https://p7.itc.cn/q_70/images03/20211111/de94dd6a91af4bf49bcc95630b14d55d.jpeg")
