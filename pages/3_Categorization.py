@@ -27,7 +27,6 @@ menu(description =
     """\n\n\nThis section will take you on a journey to explore the mythical creatures in the Classic of Mountains and Seas，including the number and categorization of creatures, and use pie charts to show the proportion of the number of creatures in each chapter and the proportion of each type of creatures. Furthermore, the page offers original texts and translations of relevant mythical creatures, with the aim of helping readers gain a more vivid understanding of them.
     """
 )
-
 ###############################################################
 # Background Image
 ###############################################################
@@ -245,3 +244,5 @@ st.markdown("Background image 2: https://pic.ntimg.cn/file/20231128/18232014_114
 # FYI, you can customize the style of text
 #customStyleTitle = '<h1 style="font-family: serif; color:#684905; font-size: 50px;">Let\'s Explore Different Types of Mythical Creatures in the Classic of Mountains and Rivers!</h1>'
 #st.markdown(customStyleTitle, unsafe_allow_html=True)
+
+

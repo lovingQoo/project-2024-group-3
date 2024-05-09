@@ -14,6 +14,7 @@ import ast
 # page info 
 ###############################################################
 
+
 st.set_page_config(
     page_title="Text Analysis -  HUMA5630-Digital Humanities - project-2024-group-3",
     page_icon="⛰️", 
@@ -21,6 +22,10 @@ st.set_page_config(
     initial_sidebar_state="expanded", 
 )
 st.caption("HUMA5630 Digital Humanities - Group 3")
+
+###############################################################
+# page menu and description
+###############################################################
 
 from menu import menu
 menu(description = 
@@ -34,16 +39,16 @@ menu(description =
 # 设置页面背景图层
 
 #SideBar color
-st.markdown(
-        """
-        <style>
-[data-testid=stSidebar] {
-        background-color: white;
-    }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+# st.markdown(
+#         """
+#         <style>
+# [data-testid=stSidebar] {
+#         background-color: white;
+#     }
+#         </style>
+#         """,
+#         unsafe_allow_html=True
+#     )
  
 
 
@@ -65,14 +70,12 @@ st.markdown(
         margin-bottom: 10px;
     }
     .header-container p {
-        font-size: 20px;
         color: white;
         text-align: center;
         display: inline-block;
     }
 
     div[data-testid="stMarkdownContainer"] p {
-        font-size: 20px;
         line-height: 2;
     }
     </style>
@@ -221,3 +224,5 @@ st.markdown("<p style='color: black;'>王紅旗：《全本繪圖山海經︰海
 st.markdown("<p style='color: black;'>羅元：《山精海怪：萌系山海經完全圖譜》，人民郵電出版社，2018年6月第1版。</p>", unsafe_allow_html=True)
 st.markdown("<p style='color: black;'>劉宗迪：《失落的天書「《山海經》與古代華夏世界觀（增訂本）》，商務印書館，2016年5月第1版。</p>", unsafe_allow_html=True)
 st.markdown("<p style='color: black;'>人魚插圖：http://localhost:8501/media/90752eaac65ed936d10977fbef2534ebfb8210319e4a6bafb76e573a.jpg</p>", unsafe_allow_html=True)
+
+
