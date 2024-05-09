@@ -28,7 +28,7 @@ st.caption("HUMA5630 Digital Humanities - Group 3")
 
 from menu import menu
 menu(description = 
-    """\n\n\nThis is Full Text Description.
+    """\n\n\nThis is a full text display. To provide a more comfortable reading experience, we have also added background music to the page.
     """
 )
 
