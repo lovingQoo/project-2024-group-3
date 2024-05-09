@@ -21,7 +21,7 @@ st.set_page_config(
 
 from menu import menu
 menu(description = 
-    """\n\n\This section investigates the geographic descriptions in the Classic of Mountains and Seas through mapping, and then illuminate the three geographic coordinates by comparing them to modern maps.
+    """\n\n\nThis section investigates the geographic descriptions in the Classic of Mountains and Seas through mapping, and then illuminate the three geographic coordinates by comparing them to modern maps.
     """
 )
 
