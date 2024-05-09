@@ -15,6 +15,16 @@ st.set_page_config(
   
 )
 
+###############################################################
+# page menu and description
+###############################################################
+
+from menu import menu
+menu(description = 
+    """\n\n\nThis section investigates the geographic descriptions in the Classic of Mountains and Seas through mapping, and then illuminate the three geographic coordinates by comparing them to modern maps.
+    """
+)
+
 def add_bg_from_local():
     st.markdown(
         f"""
