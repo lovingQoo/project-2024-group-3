@@ -4,30 +4,16 @@
 import streamlit as st
 from streamlit_image_comparison import image_comparison
 
-
-
 # Rest of your Streamlit code
 ###############################################################
 # page info 
 ###############################################################
-
 
 st.set_page_config(
     page_title="Map -  HUMA5630-Digital Humanities - project-2024-group-3",
     page_icon="🌍", 
   
 )
-
-###############################################################
-# page menu and description
-###############################################################
-
-from menu import menu
-menu(description = 
-    """\n\n\nThis section investigates the geographic descriptions in the Classic of Mountains and Seas through mapping, and then illuminate the three geographic coordinates by comparing them to modern maps.
-    """
-)
-
 
 def add_bg_from_local():
     st.markdown(
@@ -79,12 +65,13 @@ st.markdown("---")
 st.header('The correspondence between the three locations in two maps')
 st.markdown('<p style="color: blue;"> (1) Qingqiu: present-day Heze, Shandong </p>', unsafe_allow_html=True)
 st.markdown('<p style="color: blue;"> (2) Da Ren Guo: present-day Dawenkou Site，which in Tai’an, Shandong </p>', unsafe_allow_html=True)
-st.markdown('<p style="color: blue;"> (3) Bohai Sea: present-day Beibu Gulf </p>', unsafe_allow_html=True)
+st.markdown('<p style="color: blue;"> (3) Bohai Sea: present-day Bohai Bay </p>', unsafe_allow_html=True)
 st.markdown("---")
 st.header("References")
 st.markdown("王恢. 太平寰宇記索引. 影印版. 臺北: 文海出版社, 1975.")
-st.markdown("範曄. 後漢書. 西安: 太白文藝出版社, 2006.")
+st.markdown("劉宗迪.《山海經》的尺度[J].讀書,2019(06):3-13.")
 st.markdown ("劉宗迪.海上有一個大人國[J].讀書,2020(12):113-121.")
 st.markdown("《山海經》地圖，取自https://www.bilibili.com/video/BV1bu411b7q5/?spm_id_from=333.337.search-card.all.click&vd_source=6ef399ad76fd342687e206adca6b4d8f")
 st.markdown("背景插圖:https://img.zcool.cn/community/01f8905d3ac544a80120695c7fce56.jpg@2o.jpg")
+
 
