@@ -17,6 +17,17 @@ st.set_page_config(
     initial_sidebar_state="expanded", 
 )
 st.caption("HUMA5630 Digital Humanities - Group 3")
+
+###############################################################
+# page menu and description
+###############################################################
+
+from menu import menu
+menu(description = 
+    """\n\n\nThis section will take you on a journey to explore the mythical creatures in the Classic of Mountains and Seas，including the number and categorization of creatures, and use pie charts to show the proportion of the number of creatures in each chapter and the proportion of each type of creatures. Furthermore, the page offers original texts and translations of relevant mythical creatures, with the aim of helping readers gain a more vivid understanding of them.
+    """
+)
+
 ###############################################################
 # Background Image
 ###############################################################
