@@ -23,6 +23,16 @@ st.set_page_config(
 )
 st.caption("HUMA5630 Digital Humanities - Group 3")
 
+###############################################################
+# page menu and description
+###############################################################
+
+from menu import menu
+menu(description = 
+    """\n\n\nThis is Full Text Description.
+    """
+)
+
 #SideBar color
 st.markdown(
         """
