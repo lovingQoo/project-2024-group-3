@@ -29,7 +29,7 @@ st.caption("HUMA5630 Digital Humanities - Group 3")
 
 from menu import menu
 menu(description = 
-    """\n\n\nThis section includes word cloud, annotation on full text, and full text display. To help readers better understand the Classic of Mountains and Seas, different color blocks are used in the text to distinguish what attributes of words, such as characters, monsters, treasures and locations.
+    """\n\n\nThis section includes word cloud and annotation on full text. To help readers better understand the Classic of Mountains and Seas, different color blocks are used in the text to distinguish what attributes of words, such as characters, monsters, treasures and locations.
     """
 )
 
