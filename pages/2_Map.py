@@ -15,6 +15,15 @@ st.set_page_config(
     page_icon="🌍", 
   
 )
+###############################################################
+# page menu and description
+###############################################################
+from menu import menu
+menu(description = 
+    """\n\n\nThis section investigates the geographic descriptions in the Classic of Mountains and Seas through mapping, and then illuminate the three geographic coordinates by comparing them to modern map.
+    """
+)
+###############################################################
 def add_bg_from_local():
     image_path = "./images/background.jpg"  # 根据实际文件路径进行修改
     with open(image_path, 'rb') as f:
