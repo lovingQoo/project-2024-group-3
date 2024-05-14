@@ -31,13 +31,15 @@ menu(description =
 # Background Image
 ###############################################################
 def add_bg_from_local():
+    image_path = "./images/3_backgroundimage.jpeg"  # 根据实际文件路径进行修改
+    with open(image_path, 'rb') as f:
+        image_data = f.read()
     st.markdown(
         f"""
         <style>
         .stApp {{
-            background-image: url(https://pic.ntimg.cn/file/20231128/18232014_114808225102_2.jpg);
+            background-image: url(data:image/jpeg;base64,{base64.b64encode(image_data).decode()});
             background-size: cover;
-            
         }}
         </style>
         """,
@@ -47,52 +49,58 @@ def add_bg_from_local():
 add_bg_from_local()
 
 # 设置页面背景图层
+image_path = "./images/3_topimage.jpg"
+with open(image_path, 'rb') as f:
+    image_data = f.read()
+
+# Encode the image data as base64
+image_base64 = base64.b64encode(image_data).decode()
 st.markdown(
-    """
+    f"""
     <style>
-    .header-container {
-        background-image: url(https://img95.699pic.com/photo/40193/0245.jpg_wh300.jpg);
+    .header-container {{
+        background-image: url(data:image/jpeg;base64,{image_base64});
         background-size: cover;
         background-repeat: no-repeat;
         padding: 20px;
         color: white;
         text-align: center;
-    }
-    .header-container h1 {
+    }}
+    .header-container h1 {{
         font-size: 40px;
         color: white;
         margin-bottom: 10px;
-    }
-    .header-container p {
+    }}
+    .header-container p {{
         font-size: 20px;
         color: white;
         text-align: center;
         display: inline-block;
-    }
+    }}
     
     [data-testid="stExpander"],
     [data-testid="stExpanderDetails"],
-    [data-testid="stHorizontalBlock"]
-    {
+    [data-testid="stHorizontalBlock"] {{
         background-color: rgba(255, 255, 255, 0.9);
         padding: 20px;
         border-radius: 20px;
-    }
-    .st-at, .st-af {
+    }}
+    .st-at, .st-af {{
         background-color: white;
-    }
-    .st-emotion-cache-1h9usn1 {
+    }}
+    .st-emotion-cache-1h9usn1 {{
         border-width: 0;
-    } 
+    }} 
 
-    [data-testid=stSidebar] {
+    [data-testid=stSidebar] {{
         background-color: #fff1d6;
-    }
+    }}
 
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # 显示标题文字和副标题
 st.markdown('<div class="header-container"><h1>ShanHai BaiLin《山海百靈》</h1><p>The book "Shanhai Bailin: Divine Birds, Beasts, and Fish in the Shanhai Jing" includes a collection of one hundred original national treasure-level color illustrations from the Edo period\'s "Kaiqi Niaoshou Tujuan" and the Qing Dynasty\'s "Shanhai Jing Tujian." The illustrations are accompanied by supplementary texts that provide information on the habitat, appearance, behavior, and corresponding original texts from the Shanhai Jing.</p></div>', unsafe_allow_html=True)
@@ -237,8 +245,8 @@ for index, row in selected_df.iterrows():
     st.write('---')
 
 st.subheader('References')
-st.markdown("Book: 王新禧. (2018). 山海百靈 : 《山海經》里的神人鳥獸魚 = Shanhai bailing : Shanhaijing lide shen ren niao shou yu (第1版.). 北京時代華文書局.")
-st.markdown("Background image 1:https://img95.699pic.com/photo/40193/0245.jpg_wh300.jpg")
+st.markdown("Book: 王新禧. (2018). 山海百靈 : 《山海經》里的神人鳥獸魚 = Shanhai bailing : Shanhaijing lide shen ren niao shou yu (第1版.). 北京時代華文書局. https://lbdiscover.hkust.edu.hk/bib/991012695429003412")
+st.markdown("Background image 1: https://img95.699pic.com/photo/40193/0245.jpg_wh300.jpg")
 st.markdown("Background image 2: https://pic.ntimg.cn/file/20231128/18232014_114808225102_2.jpg")
 
 # FYI, you can customize the style of text
