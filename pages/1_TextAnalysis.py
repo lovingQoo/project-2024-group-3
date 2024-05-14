@@ -26,7 +26,6 @@ st.caption("HUMA5630 Digital Humanities - Group 3")
 ###############################################################
 # page menu and description
 ###############################################################
-
 from menu import menu
 menu(description = 
     """\n\n\nThis section includes word cloud and annotation on full text. To help readers better understand the Classic of Mountains and Seas, different color blocks are used in the text to distinguish what attributes of words, such as characters, monsters, treasures and locations.
@@ -57,8 +56,7 @@ st.markdown(
     """
     <style>
     .header-container {
-        background-image: url(https://img95.699pic.com/photo/40195/1356.jpg_wh300.jpg);
-        background-size: cover;
+       background-image: url(https://img95.699pic.com/photo/40195/1356.jpg_wh300.jpg);        background-size: cover;
         background-repeat: no-repeat;
         padding: 20px;
         color: white;
@@ -219,10 +217,10 @@ st.markdown("<p style='font-size: 14px;'>插圖：《山海經》中的人魚，
 
 # 在底部加上參考資料
 st.markdown("<h2 style='color: black;'>References:</h2>", unsafe_allow_html=True)
-st.markdown("<p style='color: black;'>《山海經》（戰國至漢代，公元前475年-220年），取自https://ctext.org/shan-hai-jing/zhs</p>", unsafe_allow_html=True)
-st.markdown("<p style='color: black;'>王紅旗：《全本繪圖山海經︰海內外九經》，武漢大學出版社，2011年4月第1版。</p>", unsafe_allow_html=True)
-st.markdown("<p style='color: black;'>羅元：《山精海怪：萌系山海經完全圖譜》，人民郵電出版社，2018年6月第1版。</p>", unsafe_allow_html=True)
-st.markdown("<p style='color: black;'>劉宗迪：《失落的天書「《山海經》與古代華夏世界觀（增訂本）》，商務印書館，2016年5月第1版。</p>", unsafe_allow_html=True)
-st.markdown("<p style='color: black;'>人魚插圖：http://localhost:8501/media/90752eaac65ed936d10977fbef2534ebfb8210319e4a6bafb76e573a.jpg</p>", unsafe_allow_html=True)
+st.markdown("《山海經》（戰國至漢代，公元前475年-220年），取自https://ctext.org/shan-hai-jing/zhs")
+st.markdown("王紅旗：《全本繪圖山海經︰海內外九經》，武漢大學出版社，2011年4月第1版。")
+st.markdown("羅元：《山精海怪：萌系山海經完全圖譜》，人民郵電出版社，2018年6月第1版。")
+st.markdown("劉宗迪：《失落的天書「《山海經》與古代華夏世界觀（增訂本）》，商務印書館，2016年5月第1版。https://lbdiscover.hkust.edu.hk/bib/991010741549703412")
+st.markdown("人魚插圖：https://cdn.shuge.org/uploads/2016/05/shan-hai-jing01-640x350.jpg")
 
 
