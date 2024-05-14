@@ -3,6 +3,7 @@
 ###############################################################
 import streamlit as st
 from streamlit_image_comparison import image_comparison
+import base64
 
 # Rest of your Streamlit code
 ###############################################################
@@ -14,31 +15,22 @@ st.set_page_config(
     page_icon="🌍", 
   
 )
-
-###############################################################
-# page menu and description
-###############################################################
-
-from menu import menu
-menu(description = 
-    """\n\n\nThis section investigates the geographic descriptions in the Classic of Mountains and Seas through mapping, and then illuminate the three geographic coordinates by comparing them to modern map.
-    """
-)
-
 def add_bg_from_local():
+    image_path = "./images/background.jpg"  # 根据实际文件路径进行修改
+    with open(image_path, 'rb') as f:
+        image_data = f.read()
     st.markdown(
         f"""
         <style>
         .stApp {{
-            background-image: url(https://img.zcool.cn/community/01f8905d3ac544a80120695c7fce56.jpg@2o.jpg);
+            background-image: url(data:image/jpeg;base64,{base64.b64encode(image_data).decode()});
             background-size: cover;
-            filter: contrast(0.8);
-            
         }}
         </style>
         """,
         unsafe_allow_html=True
     )
+
 
 add_bg_from_local()
 st.caption("HUMA5630 Digital Humanities - Group 3")
