@@ -12,3 +12,10 @@ Research on the ancient Chinese mythological book "The Classic of Mountains and 
 
 # URL
 https://huma5630-2024-group-3.streamlit.app/
+
+[![preview_website_group3](preview_website_group3.png)](https://huma5630-2024-group-3.streamlit.app/)
+
+# Presentation Slides
+[PPT version](https://github.com/HUMA5630-Digital-Humanities/project-2024-group-3/blob/main/The%20Classic%20of%20Mountains%20and%20Seas.pptx) | [PDF version](https://github.com/HUMA5630-Digital-Humanities/project-2024-group-3/blob/main/The%20Classic%20of%20Mountains%20and%20Seas.pdf)
+
+![preview_presentation-slides_group3](preview_presentation-slides_group3.png)
