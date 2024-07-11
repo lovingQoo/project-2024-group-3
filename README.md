@@ -19,3 +19,6 @@ https://huma5630-2024-group-3.streamlit.app/
 [PPT version](https://github.com/HUMA5630-Digital-Humanities/project-2024-group-3/blob/main/The%20Classic%20of%20Mountains%20and%20Seas.pptx) | [PDF version](https://github.com/HUMA5630-Digital-Humanities/project-2024-group-3/blob/main/The%20Classic%20of%20Mountains%20and%20Seas.pdf)
 
 ![preview_presentation-slides_group3](preview_presentation-slides_group3.png)
+
+# Sharing
+HKUST Library's Research Bridge: [Beyond the Text: An Interactive Journey Through “The Classic of Mountains and Seas” (Shan Hai Jing)](https://library.hkust.edu.hk/sc/shan-hai-jing-huma-5630/)
